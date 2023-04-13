@@ -76,17 +76,119 @@
     
 // }console.log(html(nome))
 
+// const tarefas = [ ]
+// const ask = prompt('Quais tarefas que você precisa realizar?, escreva-as aqui!:')
+// tarefas.push(ask)
+// console.log(tarefas)
+// const remove = prompt("Digite o índice da tarefa que digitou anteriormente, assim poderei apagá-lo da lista!")
+// tarefas.splice(remove)
+// console.log(tarefas)
 
-const tarefas = [ ]
+// ---------- CONCEITO DE OBJETO
+// const desenvolvedora = {
+//     nome: 'Amanda',
+//     idade: 17,
+//     email: 'amanda@gmail.com'
+// }
 
-const ask = prompt('Quais tarefas que você precisa realizar?, escreva-as aqui!:')
+// const nomeDaDesenvolvedora = desenvolvedora.nome // notação com ponto (.)
+// console.log(nomeDaDesenvolvedora)
+// const nomeDaDesenvolvedora2 = desenvolvedora['nome'] // notação com colchetes ([])
+// console.log(desenvolvedora.nome)
+// console.log(desenvolvedora)
+// desenvolvedora.nome = 'Paula'
 
-tarefas.push(ask)
+// desenvolvedora['email'] = 'paula@gmail.com'
 
-console.log(tarefas)
+// console.log(desenvolvedora)
+// const filme ={ 
+//     diretor: 'James Cameron',
+//     nome: 'Avatar: The Way of Water',
+//     ano_lan: 2022,
+//     elenco: ['Sam Worthington', 'Jake Sully', 'Sigourney Weaver', 'Zoe Saldana', 'Bailey Bass', 'Britain Dalton'],
+//     visualizado: true,
+    
+// }
+// filme.personagens = ['Gael', 'Patrick de sa junqueira', 'Clara tavares']
 
-const remove = prompt("Digite o índice da tarefa que digitou anteriormente, assim poderei apagá-lo da lista!")
+// filme.elenco[0] = 'Camila'
+// console.log(filme.elenco)
 
-tarefas.splice(remove)
+// filme.nome = 'Avatar: The Way of Water'
+// console.log(filme.nome)
 
-console.log(tarefas)
+// console.log(`O nome desse filme é ${filme.nome}, seus personagens são ${filme.personagens[0]}, ${filme.personagens[1]} e ${filme.personagens[2]}`)
+
+// const NewMovie={
+//     ...filme,
+//     nome: 'O outro lado do paraíso',
+//     Vilã: 'Sophia Monserrá'
+// }
+
+// const listaDeNomes = ['pedro','clara','Betty']
+// const copiaListaDeNomes = [...listaDeNomes,'Mcieelee'] /// adiciona um elemento no fim da lista
+
+// console.log(copiaListaDeNomes)
+// console.log(filme.diretor)
+
+// console.log(filme.nome)
+
+// console.log(filme['ano_lan'])
+
+// console.log(filme['elenco'])
+
+// console.log(filme['visualizado'])
+
+// const Person = {
+//     nome: 'Lukita',
+//     idade: 14,
+//     generoMusical: 'Kpop'
+// }
+
+// console.log(`O nome da pessoa é ${Person.nome}, ela tem ${Person.idade} anos e gosta muito de ${Person.generoMusical}`)
+
+// const maeDePet={
+// nome: 'maria',
+// pet:{
+//     nome:'Alberto',
+//     raca: 'Salsicha',
+//     idade: 2
+//     }
+// }
+
+// const nomeDePet = maeDePet.pet.nome
+// console.log(nomeDePet)
+
+// const desenvolvedor = {
+//     nome: 'Maria',
+//     lingaguens:['java','CSS','HTML']
+// }
+
+// desenvolvedor.numeroLinguagens = 3
+// console.log(desenvolvedor)
+
+// const professores = [
+//     {nome: 'Paula', componente: 'Técnico Profissional'},
+//     {nome: 'Bruno', componente: 'Portugues'},
+//     {nome: 'Cacau', componente: 'Artes !!'}
+// ]
+// console.log(professores[0].nome)
+
+const Person = {
+    nome: 'MAlu',
+    idade: 37
+}
+function personObject(Person){
+
+    const Foods = ['batata', 'sushi', 'chocolate']
+    Person.comidas = Foods
+
+    const novoObjeto = {
+        ...Person,
+        Bffs:{
+            nome: 'Lari',
+            idade: '16'
+        }
+    }
+    return console.log(`O nome da pessoa é ${novoObjeto.nome}, e suas comidas favoritas são ${novoObjeto.comidas[0]},${novoObjeto.comidas[1]} e ${novoObjeto.comidas[2]}. Sua melhor amiga é ${novoObjeto.Bffs.nome} e tem ${novoObjeto.Bffs.idade} anos`)
+}personObject(Person)
