@@ -198,34 +198,34 @@
 
 // 1. Resolva os passos a seguir
 // a) Crie um objeto. Ele deve conter duas propriedades: nome (string) e lista de compras (um array que sempre terá exatamente três itens). Depois, escreva uma função que recebe como entrada um objeto e imprime uma mensagem no modelo abaixo: 
-// const arm = {
-//     nome: 'Jhope',
-//     lista: ['Maça', 'banana', 'alga']
+const arm = {
+    nome: 'Jhope',
+    lista: ['Maça', 'banana', 'alga']
 
-// }
+}
 
-// function showArm(arm){
+function showArm(arm){
       
-//     console.log(`Olá ${arm.nome}. Hoje seus itens prioritários na lista de comprar são ${arm.lista[0]},${arm.lista[1]} e ${arm.lista[2]}`);
+    console.log(`Olá ${arm.nome}. Hoje seus itens prioritários na lista de comprar são ${arm.lista[0]},${arm.lista[1]} e ${arm.lista[2]}`);
 
-// }
-// showArm(arm)
+}
+showArm(arm)
 
-// "Olá, nome. Hoje seus itens prioritários na lista de comprar são ___, ____ e ____"
+"Olá, nome. Hoje seus itens prioritários na lista de comprar são ___, ____ e ____"
 
 // b) Agora, usando o operador spread, crie um novo objeto mantendo o valor da propriedade nome, mas com uma nova lista de itens. Depois, chame a função feita no item anterior passando como argumento o novo objeto.
 
-// const novoArm = {
-//     ...arm,
-//     lista: ['Kimchi', 'bulgolgi', 'frti']
+const novoArm = {
+    ...arm,
+    lista: ['Kimchi', 'bulgolgi', 'frti']
 
-// }
-// function showArm2(x){
+}
+function showArm2(x){
       
-//     console.log(`Olá ${x.nome}. Hoje seus itens prioritários na lista de comprar são ${x.lista[0]},${x.lista[1]} e ${x.lista[2]}`);
+    console.log(`Olá ${x.nome}. Hoje seus itens prioritários na lista de comprar são ${x.lista[0]},${x.lista[1]} e ${x.lista[2]}`);
 
-// }
-// showArm2(novoArm)
+}
+showArm2(novoArm)
 
 
 // 2. Resolva os passos a seguir: 
@@ -248,7 +248,7 @@ const arm2 = {
 
 }
 
-//     b) Escreva uma função que receba esses objetos e retorne um array com as seguintes informações:
+// //     b) Escreva uma função que receba esses objetos e retorne um array com as seguintes informações:
     
 function returArray(arm1, arm2){
 
@@ -271,10 +271,32 @@ function returArray(arm1, arm2){
 // 3. Resolva os passos a seguir: 
     
 //     a) Crie uma variável de escopo global que guarde um `array` vazio chamada `carrinho`
+
+const carrinho  = [];
     
 //     b) Crie três novos objetos que representem frutas de um sacolão. Eles devem ter as seguintes propriedades: nome (`string`) e disponibilidade (`boolean` - devem começar como `true`)
-    
+const maca = {
+    nome: 'Maçã',
+    disponibilidade: true
+}
+const banana = {
+    nome: 'Banana',
+    disponibilidade: true
+}
+const tangerina = {
+    nome: 'Tangerinaaaa',
+    disponibilidade: true
+}
+
 //     c) Crie uma função que **receba** um objeto fruta por **parâmetro** e coloque-a dentro do array de `carrinho`. Invoque essa função passando os três objetos criados. 
+
+function fruitPush(carrinho,maca,banana,tangerina){
+
+    carrinho.push(maca,banana,tangerina)
+    console.log(carrinho)
+
+}
+fruitPush(carrinho,maca,banana,tangerina)
     
 //     - 💡  Dica
         
@@ -284,3 +306,22 @@ function returArray(arm1, arm2){
 
 // Crie um função que pergunte ao usuário seu nome, sua idade e sua profissão e depois imprima no console um objeto com essas propriedades. Depois de imprimir o novo objeto, imprima também o tipo dele para garantir que é um objeto.
 
+const name = prompt('Digite seu nome')
+const age = prompt('Digite sua idade')
+const profission = prompt('Digite sua profissão')
+
+const person = {
+    nome: '',
+    idade: '',
+    profissao: ''
+}
+function objectToPrompt(person,name,age,profission){
+
+    person.nome = name
+    person.idade = age
+    person.profissao = profission
+    console.log(person)
+    console.log(typeof(person))
+
+
+}objectToPrompt(person,name,age,profission)
