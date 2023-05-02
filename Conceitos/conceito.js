@@ -412,16 +412,16 @@
 //         break;
 // }
 
-const people = prompt('Tem o EM concluido?').toLowerCase()
-const people1 = prompt('Tem 18 anos ou mais?').toLowerCase()
-const people2 = prompt('faz outra facul?').toLowerCase()
+// const people = prompt('Tem o EM concluido?').toLowerCase()
+// const people1 = prompt('Tem 18 anos ou mais?').toLowerCase()
+// const people2 = prompt('faz outra facul?').toLowerCase()
 
-function peopleReturnDate(people,people1,people2){
+// function peopleReturnDate(people,people1,people2){
 
-        if(people === 'sim' && people1 === 'sim' && people2 === 'nao' ){
-            console.log('Você pode estudar')
+//         if(people === 'sim' && people1 === 'sim' && people2 === 'nao' ){
+//             console.log('Você pode estudar')
 
-        }else{
-            console.log('Voce não pode estudar')
-        }
-}peopleReturnDate(people,people1,people2)
+//         }else{
+//             console.log('Voce não pode estudar')
+//         }
+// }peopleReturnDate(people,people1,people2)
