@@ -198,130 +198,230 @@
 
 // 1. Resolva os passos a seguir
 // a) Crie um objeto. Ele deve conter duas propriedades: nome (string) e lista de compras (um array que sempre terá exatamente três itens). Depois, escreva uma função que recebe como entrada um objeto e imprime uma mensagem no modelo abaixo: 
-const arm = {
-    nome: 'Jhope',
-    lista: ['Maça', 'banana', 'alga']
+// const arm = {
+//     nome: 'Jhope',
+//     lista: ['Maça', 'banana', 'alga']
 
-}
+// }
 
-function showArm(arm){
+// function showArm(arm){
       
-    console.log(`Olá ${arm.nome}. Hoje seus itens prioritários na lista de comprar são ${arm.lista[0]},${arm.lista[1]} e ${arm.lista[2]}`);
+//     console.log(`Olá ${arm.nome}. Hoje seus itens prioritários na lista de comprar são ${arm.lista[0]},${arm.lista[1]} e ${arm.lista[2]}`);
 
-}
-showArm(arm)
+// }
+// showArm(arm)
 
-"Olá, nome. Hoje seus itens prioritários na lista de comprar são ___, ____ e ____"
+// "Olá, nome. Hoje seus itens prioritários na lista de comprar são ___, ____ e ____"
 
-// b) Agora, usando o operador spread, crie um novo objeto mantendo o valor da propriedade nome, mas com uma nova lista de itens. Depois, chame a função feita no item anterior passando como argumento o novo objeto.
+// // b) Agora, usando o operador spread, crie um novo objeto mantendo o valor da propriedade nome, mas com uma nova lista de itens. Depois, chame a função feita no item anterior passando como argumento o novo objeto.
 
-const novoArm = {
-    ...arm,
-    lista: ['Kimchi', 'bulgolgi', 'frti']
+// const novoArm = {
+//     ...arm,
+//     lista: ['Kimchi', 'bulgolgi', 'frti']
 
-}
-function showArm2(x){
+// }
+// function showArm2(x){
       
-    console.log(`Olá ${x.nome}. Hoje seus itens prioritários na lista de comprar são ${x.lista[0]},${x.lista[1]} e ${x.lista[2]}`);
+//     console.log(`Olá ${x.nome}. Hoje seus itens prioritários na lista de comprar são ${x.lista[0]},${x.lista[1]} e ${x.lista[2]}`);
 
-}
-showArm2(novoArm)
+// }
+// showArm2(novoArm)
 
 
-// 2. Resolva os passos a seguir: 
+// // 2. Resolva os passos a seguir: 
     
-//     a) Crie dois objetos diferentes com as seguintes propriedades: nome, idade e profissão. 
+// //     a) Crie dois objetos diferentes com as seguintes propriedades: nome, idade e profissão. 
     
-const arm1 = {
+// const arm1 = {
 
-    nome: 'Malu',
-    idade: 17,
-    profissao: 'Professora de dança'
+//     nome: 'Malu',
+//     idade: 17,
+//     profissao: 'Professora de dança'
 
-}
+// }
 
-const arm2 = {
+// const arm2 = {
 
-    nome: 'Beti',
-    idade: 17,
-    profissao: 'Biologa marinha'
+//     nome: 'Beti',
+//     idade: 17,
+//     profissao: 'Biologa marinha'
 
-}
+// }
 
-// //     b) Escreva uma função que receba esses objetos e retorne um array com as seguintes informações:
+// // //     b) Escreva uma função que receba esses objetos e retorne um array com as seguintes informações:
     
-function returArray(arm1, arm2){
+// function returArray(arm1, arm2){
 
-    const carac1 = arm1.nome + arm2.nome
-    const carac2 = carac1.length
-    const carac3 = arm1.profissao + arm2.profissao
-    const carac4 = carac3.length
-    const nomes = [];
-    nomes.push(arm1.nome, arm2.nome,carac2,arm1.idade,arm2.idade,arm1.profissao,arm2.profissao,carac4)
-    console.log(nomes)
+//     const carac1 = arm1.nome + arm2.nome
+//     const carac2 = carac1.length
+//     const carac3 = arm1.profissao + arm2.profissao
+//     const carac4 = carac3.length
+//     const nomes = [];
+//     nomes.push(arm1.nome, arm2.nome,carac2,arm1.idade,arm2.idade,arm1.profissao,arm2.profissao,carac4)
+//     console.log(nomes)
     
-}returArray(arm1,arm2)
+// }returArray(arm1,arm2)
 
-//     1. O valor de `nome`
-//     2. O numero de caracteres do valor `nome`
-//     3. O valor de `idade`
-//     4. O valor de `profissão`
-//     5. O numero de caracteres do valor `profissão`
+// //     1. O valor de `nome`
+// //     2. O numero de caracteres do valor `nome`
+// //     3. O valor de `idade`
+// //     4. O valor de `profissão`
+// //     5. O numero de caracteres do valor `profissão`
 
-// 3. Resolva os passos a seguir: 
+// // 3. Resolva os passos a seguir: 
     
-//     a) Crie uma variável de escopo global que guarde um `array` vazio chamada `carrinho`
+// //     a) Crie uma variável de escopo global que guarde um `array` vazio chamada `carrinho`
 
-const carrinho  = [];
+// const carrinho  = [];
     
-//     b) Crie três novos objetos que representem frutas de um sacolão. Eles devem ter as seguintes propriedades: nome (`string`) e disponibilidade (`boolean` - devem começar como `true`)
-const maca = {
-    nome: 'Maçã',
-    disponibilidade: true
-}
-const banana = {
-    nome: 'Banana',
-    disponibilidade: true
-}
-const tangerina = {
-    nome: 'Tangerinaaaa',
-    disponibilidade: true
-}
+// //     b) Crie três novos objetos que representem frutas de um sacolão. Eles devem ter as seguintes propriedades: nome (`string`) e disponibilidade (`boolean` - devem começar como `true`)
+// const maca = {
+//     nome: 'Maçã',
+//     disponibilidade: true
+// }
+// const banana = {
+//     nome: 'Banana',
+//     disponibilidade: true
+// }
+// const tangerina = {
+//     nome: 'Tangerinaaaa',
+//     disponibilidade: true
+// }
 
-//     c) Crie uma função que **receba** um objeto fruta por **parâmetro** e coloque-a dentro do array de `carrinho`. Invoque essa função passando os três objetos criados. 
+// //     c) Crie uma função que **receba** um objeto fruta por **parâmetro** e coloque-a dentro do array de `carrinho`. Invoque essa função passando os três objetos criados. 
 
-function fruitPush(carrinho,maca,banana,tangerina){
+// function fruitPush(carrinho,maca,banana,tangerina){
 
-    carrinho.push(maca,banana,tangerina)
-    console.log(carrinho)
+//     carrinho.push(maca,banana,tangerina)
+//     console.log(carrinho)
 
-}
-fruitPush(carrinho,maca,banana,tangerina)
+// }
+// fruitPush(carrinho,maca,banana,tangerina)
     
-//     - 💡  Dica
+// //     - 💡  Dica
         
-//       Aqui você deve usar o método **push()**
+// //       Aqui você deve usar o método **push()**
         
-//     d) Imprima a variável `carrinho` e garanta que ela agora seja um **array preenchido com três objetos.**
+// //     d) Imprima a variável `carrinho` e garanta que ela agora seja um **array preenchido com três objetos.**
 
-// Crie um função que pergunte ao usuário seu nome, sua idade e sua profissão e depois imprima no console um objeto com essas propriedades. Depois de imprimir o novo objeto, imprima também o tipo dele para garantir que é um objeto.
+// // Crie um função que pergunte ao usuário seu nome, sua idade e sua profissão e depois imprima no console um objeto com essas propriedades. Depois de imprimir o novo objeto, imprima também o tipo dele para garantir que é um objeto.
 
-const name = prompt('Digite seu nome')
-const age = prompt('Digite sua idade')
-const profission = prompt('Digite sua profissão')
+// const name = prompt('Digite seu nome')
+// const age = prompt('Digite sua idade')
+// const profission = prompt('Digite sua profissão')
 
-const person = {
-    nome: '',
-    idade: '',
-    profissao: ''
-}
-function objectToPrompt(person,name,age,profission){
+// const person = {
+//     nome: '',
+//     idade: '',
+//     profissao: ''
+// }
+// function objectToPrompt(person,name,age,profission){
 
-    person.nome = name
-    person.idade = age
-    person.profissao = profission
-    console.log(person)
-    console.log(typeof(person))
+//     person.nome = name
+//     person.idade = age
+//     person.profissao = profission
+//     console.log(person)
+//     console.log(typeof(person))
 
 
-}objectToPrompt(person,name,age,profission)
+// }objectToPrompt(person,name,age,profission)
+
+
+// const funcaoCompare = (num1, num2) => {
+//     if (num1 === num2) {
+//         console.log("Sucesso! Os números são iguais!")
+//     }
+// }
+
+// const n1 = Number(prompt("Digite um número:"))
+// const n2 = Number(prompt("Digite outro número"))
+
+// funcaoCompare(n1, n2)
+
+
+// const funcaoCompare2 = (numb1, numb2) => {
+//     if (numb1 === numb2) {
+//         console.log("Números iguais")
+//     } else {
+//         console.log("Números diferentes")
+//     }
+// }
+
+// const nu1 = Number(prompt("Digite um número:"))
+// const nu2 = Number(prompt("Digite outro número"))
+
+// funcaoCompare2(nu1, nu2)
+
+
+// const funcaoCompare3 = (x, y) => {
+//     if (x === y) {
+//         console.log("Iguais")
+//     } else if (x >= y) {
+//         console.log(`${x} é maior que ${y}`)
+//     } else if (x <= y) {
+//         console.log(`${x} é menor que ${y}`)
+//     }
+// }
+
+// const x1 = Number(prompt("Digite um número:"))
+// const y2 = Number(prompt("Digite outro número"))
+
+// funcaoCompare2(x1, y2)
+
+
+
+
+// let paisDeOrigem = prompt("Digite o país que você nasceu:")
+// switch (paisDeOrigem) {
+//     case 'Brasil':
+//         console.log('brasileiro')
+//         break;
+//     case 'EUA':
+//         console.log('norte americano')
+//         break;
+//     case 'EUA':
+//         console.log('norte americano')
+//         break;
+//     case 'Inglaterra':
+//         console.log('inglês')
+//         break;
+//     default:
+// //         console.log('nacionalidade não encontrada')
+// //         break;
+// // }
+
+// let sentimentoDia = prompt("Digite o seu sentimento do dia:")
+// switch (sentimentoDia) {
+//     case 'Tristeza':
+//         console.log('Que tistreza')
+//         break;
+//     case 'Felicidade':
+//         console.log('YEY')
+//         break;
+//     case 'Raiva':
+//         console.log('Não gita, não gita')
+//         break;
+//     case 'Nojo':
+//         console.log('Poxa')
+//         break;
+//     case 'Medo':
+//         console.log('Num chora pelo amor de deus')
+//         break;
+//     default:
+//         console.log('Não sei que sentimento é esse')
+//         break;
+// }
+
+// const people = prompt('Tem o EM concluido?').toLowerCase()
+// const people1 = prompt('Tem 18 anos ou mais?').toLowerCase()
+// const people2 = prompt('faz outra facul?').toLowerCase()
+
+// function peopleReturnDate(people,people1,people2){
+
+//         if(people === 'sim' && people1 === 'sim' && people2 === 'nao' ){
+//             console.log('Você pode estudar')
+
+//         }else{
+//             console.log('Voce não pode estudar')
+//         }
+// }peopleReturnDate(people,people1,people2)
